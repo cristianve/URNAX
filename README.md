@@ -29,13 +29,13 @@ The requirements for this application are:
 of the different entities that exist in the language: object, class, case, class, etc.
 * The use "whenever possible" of expressions in the code.
 * Typical functional programming figures, such as:
-  o HOF (Higher Order Functions)
-  o Option (tipos nullables)
-  o Pattern matching
-  o Funciones anónimas
-  o Programación asíncrona
-  o Comentarios en código
-  o Estructura limpia y legibilidad
+  -  HOF (Higher Order Functions)
+  -  Option (tipos nullables)
+  -  Pattern matching
+  -  Funciones anónimas
+  -  Programación asíncrona
+  -  Comentarios en código
+  -  Estructura limpia y legibilidad
   
 # 3. Folders and files 📁
 # 4. Configuration ⚙️
