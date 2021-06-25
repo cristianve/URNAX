@@ -15,7 +15,8 @@
 
 # 1. Main idea 🤔💭
 
-A company dedicated to electronic voting has been given the green light by the ministry to create and deploy an electronic voting software for the next municipal elections.
+A company dedicated to electronic voting has been given the green light by the ministry to create and deploy an electronic voting software for the next municipal elections.  
+
 They have asked for a software solution (Scala) that will help them to validate the identity of the voters and of course they can only vote once. The software will also send on day of voting a message to the registered users giving the location of the polling station where they are assigned to vote.
 
 
