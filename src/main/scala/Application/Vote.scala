@@ -1,6 +1,16 @@
 package com.redgroup.votox
 package Application
 
-class Vote {
+import Domain.Person
+import Domain.Services.ValidationService
+
+class Vote (val validationService: ValidationService) {
+
+
+  def Execute( person:Person) : Boolean ={
+
+    var validate = validationService.
+
+  }
 
 }
