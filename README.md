@@ -60,9 +60,28 @@ The requirements for this application are:
 
 # 4. Configuration ⚙️
 
-# 5 How to build ⛏️
+## Requirements:
 
-# 6. Run in local 🏠
+- First, make sure you have the Java 8 JDK (or Java 11 JDK) installed. ```java -version(Make sure you have version 1.8 or 11.)```
+- Need SBT to install all dependecies. https://www.scala-sbt.org/download.html
+- Then, install Scala: https://www.scala-lang.org/download/
+
+
+# 5. Run in local 🏠
+
+## Go to root path URNAX where you can find the build.sbt file and run the following command on CMD:
+```sbt```
+Inside sbt write the command "run":
+```sbt:Votox> run ```
+
+<p align="center">
+ <img style="text-align:center" src="images/sbtRun.JPG" width="25%" height="25%" alt="DDD">
+</p>
+
+
+Now application is running on http://localhost:9001
+
+# 6. End-points:
 
 
 
