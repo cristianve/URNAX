@@ -9,7 +9,10 @@ import io.circe.generic.auto._
 
 import scala.io.BufferedSource
 
-
+/**
+ * Implementacion custom para trabajar con nuestro Json de escuelas como BD, implementamos los metodos de nuestro trait
+ * Como se puede ver en esta clase utilizamos High Order functions,  funciones anonimas y los tipos scala.Option (mediante el uso del .orNull)
+ */
 class SchoolJsonRepository extends LocationRepository {
 
   val path: String = getClass.getResource("/schools.json").getPath;

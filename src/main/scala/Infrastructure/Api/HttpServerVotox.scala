@@ -18,14 +18,20 @@ import akka.http.scaladsl.server.Directives
 import scala.concurrent.ExecutionContextExecutor
 import scala.io.StdIn
 
+/**
+ * Utilizamos el tipo object para asegurar nuestro Singleton de cliente API ademas extendemos del treat Directives de la librería akka
+ *
+ *
+ */
 object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
 
-
+  //Declaracion impolicita de vals
   implicit val system: ActorSystem[Nothing] = ActorSystem(Behaviors.empty, "Request")
   implicit val executionContext: ExecutionContextExecutor = system.executionContext
 
   def main(args: Array[String]): Unit = {
 
+    //Programacion asincrona mediante el uso de la libreria Akka y su metodo complete
     val voteRoute =
       path("vote") {
         post {
@@ -34,7 +40,7 @@ object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
 
               val vote = VoteDto(idPerson.toInt, idPoliticalParty.toInt)
               val applicationService = new VoteApplicationService(validationService = new ValidationService(new PersonJsonRepository), voteService = new VoteService(new PersonJsonRepository, new PoliticalPartyJsonRepository))
-
+              //try catch en escala con los casos de las posibles excepciones controladas
               try {
                 applicationService.Execute(vote)
                 complete(StatusCodes.OK)
@@ -61,7 +67,7 @@ object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
     val notifyRoute =
       path("notify") {
         post {
-          val applicationService = new NotifyPeopleApplicationService(personRepository = new PersonJsonRepository,locationRepository =  new SchoolJsonRepository, notificationService =  new EmailNotificationService)
+          val applicationService = new NotifyPeopleApplicationService(personRepository = new PersonJsonRepository, locationRepository = new SchoolJsonRepository, notificationService = new EmailNotificationService)
           applicationService.Execute()
           complete(StatusCodes.OK)
         }

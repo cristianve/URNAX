@@ -12,7 +12,10 @@ import java.io.PrintWriter
 import scala.collection.mutable.ListBuffer
 import scala.io.BufferedSource
 
-
+/**
+ * Implementacion custom para trabajar con nuestro Json de personas como BD, implementamos los metodos de nuestro trait
+ * Como se puede ver en esta clase utilizamos High Order functions,  funciones anonimas y los tipos scala.Option (mediante el uso del .orNull)
+ */
 class PersonJsonRepository extends PersonRepository {
 
   val path: String = getClass.getResource("/people.json").getPath;
