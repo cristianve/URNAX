@@ -5,11 +5,11 @@
 # Content 📇
 
 *   1. <a href="#1-main-idea-"> Main Idea </a>
-*   2. <a href="#1-main-idea-"> Requirements </a>
-*   3. <a href="#1-main-idea-"> Folders and files </a>
-*   4. <a href="#1-main-idea-">  Configuration </a>
-*   5. <a href="#1-main-idea-"> Run in local </a>
-*   6. <a href="#1-main-idea-"> Endpoints </a>
+*   2. <a href="#2-requirements-%EF%B8%8F"> Requirements </a>
+*   3. <a href="#3-folders-and-files-"> Folders and files </a>
+*   4. <a href="#4-configuration-%EF%B8%8F">  Configuration </a>
+*   5. <a href="#5-run-in-local-"> Run in local </a>
+*   6. <a href="#6-endpoints"> Endpoints </a>
 
 # 1. Main idea 🤔💭
 
