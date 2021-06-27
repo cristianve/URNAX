@@ -4,7 +4,7 @@
 
 # Content 📇
 
-*   1. <a href="url"> Main Idea </a>
+*   1. <a href="#1-main-idea-"> Main Idea </a>
 *   2. Requirements
 *   3. Folders and files
 *   4. Configuration
