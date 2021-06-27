@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "carlos",
     "surname": "Martinez",
     "nif": "48142332G",
@@ -12,7 +12,7 @@
     "hasVoted": false
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "Cristian",
     "surname": "Vega",
     "nif": "23442332J",
@@ -24,7 +24,7 @@
     "hasVoted": false
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Jordina",
     "surname": "Pidelaserra",
     "nif": "09876523H",
@@ -33,6 +33,90 @@
       "state": "Barcelona",
       "postalCode": "08970"
     },
-    "hasVoted": true
+    "hasVoted": false
+  },
+  {
+    "id": 3,
+    "name": "Juan",
+    "surname": "Pedro",
+    "nif": "48121332G",
+    "direction": {
+      "city": "Cornella de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08910"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 4,
+    "name": "Julio",
+    "surname": "Iglesias",
+    "nif": "48142312X",
+    "direction": {
+      "city": "Badalona",
+      "state": "Barcelona",
+      "postalCode": "08434"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 5,
+    "name": "Whiski",
+    "surname": "Alejandro",
+    "nif": "65142332G",
+    "direction": {
+      "city": "Barcelona",
+      "state": "Barcelona",
+      "postalCode": "08980"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 6,
+    "name": "Ana",
+    "surname": "Rojas",
+    "nif": "11142332G",
+    "direction": {
+      "city": "Esplugues de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08950"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 7,
+    "name": "Pepito",
+    "surname": "Grillo",
+    "nif": "67222332G",
+    "direction": {
+      "city": "Ripollet",
+      "state": "Barcelona",
+      "postalCode": "08990"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 8,
+    "name": "Pepita",
+    "surname": "Martinez",
+    "nif": "33342332G",
+    "direction": {
+      "city": "Esplugues de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08950"
+    },
+    "hasVoted": false
+  },
+  {
+    "id": 9,
+    "name": "Josefa",
+    "surname": "Galvez",
+    "nif": "48142344H",
+    "direction": {
+      "city": "Barcelona",
+      "state": "Barcelona",
+      "postalCode": "08990"
+    },
+    "hasVoted": false
   }
 ]
