@@ -121,7 +121,7 @@ Route ('http://localhost:9001/notify')
 
 <b>Send emails to all person on people.json with the needed information to know where to go to vote:<b/>✔️  
 
-<img style="text-align:center" src="images/EmailService.JPG" width="50%" height="50%" alt="postmanScore">
+<img style="text-align:center" src="images/notify.JPG" width="50%" height="50%" alt="postmanScore">
 
 ## Email Service:
 
