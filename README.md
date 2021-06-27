@@ -62,6 +62,11 @@ In order to have a list of voters and parties we use the JSON data structure as 
  <img style="text-align:center" src="images/politicalParties.JPG" width="25%" height="25%" alt="politicalParties">
 </p>
 
+* Note: if you want to modify some data of the JSON go to current directory (target folder):
+<p align="center">
+ <img style="text-align:center" src="images/target.JPG" width="25%" height="25%" alt="politicalParties">
+</p>
+
 # 4. Configuration ⚙️
 
 ## Requirements:
