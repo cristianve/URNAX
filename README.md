@@ -105,7 +105,8 @@ Case idPerson not exist on the person.json list:❌
 
 ## Get score:
 Route ('http://localhost:9001/score')
+Return all political parties scores (vote counts):✔️  
 
- <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
+<img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
 
