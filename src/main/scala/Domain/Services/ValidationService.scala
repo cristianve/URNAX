@@ -10,6 +10,7 @@ import Domain.Repositories.PersonRepository
  * En esta clase utilizamos la herencia mediante las excepciones custom que hemos creado para poder diferenciar en el case del try catch en nuestro cliente Http y asi poder devolver el codigo de error adecuado
  * Utilizamos injección de dependencias cumpliendo el patron DI asi bien solo conocemos los contratos de estas garantizando el bajo acoplamiento y alta cohesion, además cumpliendo el principio IoC mediante los treats aún profundizando mas podriamos decir que utilizamos el principio de sustitucion Liskov
  * Nos valemos de el type Unit de Scala para no devolver ningun objeto en concreto sino el tipo especial minimo del cual no hereda ningun otro objeto
+ *
  * @param personRepository repositorio de personas injectado con una implementacion custom para trabajar con JSON
  **/
 case class ValidationService(personRepository: PersonRepository) {
