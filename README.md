@@ -102,13 +102,15 @@ Route ('http://localhost:9001/vote')
 * idPerson: Person identifier. (Required)
 * idPoliticalParty: Political party identifier. (Required)  
 
-<b>Case vote successful:<b/>✔️  </br>
+<b>Case vote successful:<b/>✔️  
+    
 
 <img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
-<b>Case idPerson already voted (hasVoted = true):<b/>❌ </br> 
+<b>Case idPerson already voted (hasVoted = true):<b/>❌  
 
 <img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
-<b>Case idPerson not exist on the person.json list:<b/>❌ </br> 
+<b>Case idPerson not exist on the person.json list:<b/>❌  
+    
 
 <img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
 
@@ -116,7 +118,8 @@ Route ('http://localhost:9001/vote')
 ## Get score:
 Route ('http://localhost:9001/score')  
 
-<b>Return all political parties scores (vote counts):<b/>✔️  </br>
+<b>Return all political parties scores (vote counts):<b/>✔️  
+    
 
 <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
