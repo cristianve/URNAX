@@ -121,7 +121,7 @@ Route ('http://localhost:9001/score')
 
 ## Email Service:
 
-<b>Send email with the information needed to vote (school and town).<b/>✔️  
+<b>Send email with the information needed to vote (school and town) for every person on the list.<b/>✔️  
     
 
 <img style="text-align:center" src="images/EmailService.JPG" width="50%" height="50%" alt="postmanScore">
