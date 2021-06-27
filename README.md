@@ -4,18 +4,12 @@
 
 # Content 📇
 
-*
-    1. Main Idea
-*
-    2. Requirements
-*
-    3. Folders and files
-*
-    4. Configuration
-*
-    5. How to build
-*
-    6. Run in local
+*   1. <a href="#1-main-idea-"> Main Idea </a>
+*   2. <a href="#2-requirements-%EF%B8%8F"> Requirements </a>
+*   3. <a href="#3-folders-and-files-"> Folders and files </a>
+*   4. <a href="#4-configuration-%EF%B8%8F">  Configuration </a>
+*   5. <a href="#5-run-in-local-"> Run in local </a>
+*   6. <a href="#6-endpoints"> Endpoints </a>
 
 # 1. Main idea 🤔💭
 
@@ -57,6 +51,16 @@ The requirements for this application are:
  <img style="text-align:center" src="images/ddd.PNG" width="25%" height="25%" alt="DDD">
 </p>
 
+**Database/Local Store via JSON:**  
+
+
+In order to have a list of voters and parties we use the JSON data structure as a database.
+<p align="center">
+ <img style="text-align:center" src="images/peopleJson.JPG" width="25%" height="25%" alt="peopleJson">
+</p>
+<p align="center">
+ <img style="text-align:center" src="images/politicalParties.JPG" width="25%" height="25%" alt="politicalParties">
+</p>
 
 # 4. Configuration ⚙️
 
@@ -79,13 +83,40 @@ The requirements for this application are:
 
 
 <p align="center">
- <img style="text-align:center" src="images/sbtRun.JPG" width="100%" height="100%" alt="DDD">
+ <img style="text-align:center" src="images/sbtRun.JPG" width="75%" height="75%" alt="DDD">
 </p>
 
 
 Now application is running on http://localhost:9001
 
-# 6. End-points:
+# 6. Endpoints:
 
+## POST Vote:
+Route ('http://localhost:9001/vote')
+* idPerson: Person identifier. (Required)
+* idPoliticalParty: Political party identifier. (Required)  
+
+<b>Case vote successful:<b/>✔️  
+    
+
+<img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
+    </br>
+<b>Case idPerson already voted (hasVoted = true):<b/>❌  
+</br>
+<img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
+    </br>
+<b>Case idPerson not exist on the person.json list:<b/>❌  
+   </br> 
+
+<img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
+
+
+## Get score:
+Route ('http://localhost:9001/score')  
+
+<b>Return all political parties scores (vote counts):<b/>✔️  
+    
+
+<img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
 
