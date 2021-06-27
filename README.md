@@ -89,7 +89,7 @@ In order to have a list of voters and parties we use the JSON data structure as 
 
 
 <p align="center">
- <img style="text-align:center" src="images/sbtRun.JPG" width="100%" height="100%" alt="DDD">
+ <img style="text-align:center" src="images/sbtRun.JPG" width="75%" height="75%" alt="DDD">
 </p>
 
 
