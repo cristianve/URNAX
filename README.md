@@ -62,6 +62,11 @@ In order to have a list of voters and parties we use the JSON data structure as 
  <img style="text-align:center" src="images/politicalParties.JPG" width="25%" height="25%" alt="politicalParties">
 </p>
 
+* Note: if you want to modify some data of the JSON go to current directory (target folder):
+<p align="center">
+ <img style="text-align:center" src="images/target.JPG" width="25%" height="25%" alt="politicalParties">
+</p>
+
 # 4. Configuration ⚙️
 
 ## Requirements:
@@ -116,13 +121,16 @@ Route ('http://localhost:9001/score')
 
 <b>Return all political parties scores (vote counts):<b/>✔️  
     
-
 <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
+  
+## Send emails:
+Route ('http://localhost:9001/notify')  
 
-## Email Service:
 
 <b>Send email with the information needed to vote (school and town) for every person on the list.<b/>✔️  
-    
+  
+<img style="text-align:center" src="images/notify.JPG" width="50%" height="50%" alt="postmanScore">
+
 
 <img style="text-align:center" src="images/EmailService.JPG" width="50%" height="50%" alt="postmanScore">
 
