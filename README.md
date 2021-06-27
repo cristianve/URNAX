@@ -88,6 +88,9 @@ Now application is running on http://localhost:9001
 # 6. End-points:
 
 ## POST Vote:
+Route ('http://localhost:9001/vote')
+* idPerson: Person identifier. (Required)
+* idPoliticalParty: Political party identifier. (Required)
 
  <img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
  <img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
@@ -95,6 +98,7 @@ Now application is running on http://localhost:9001
 
 
 ## Get score:
+Route ('http://localhost:9001/score')
 
  <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
