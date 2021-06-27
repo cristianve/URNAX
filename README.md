@@ -43,6 +43,20 @@ The requirements for this application are:
     - Estructura limpia y legibilidad
 
 # 3. Folders and files 📁
+ * **Infraestructura Layer**
+    * **Application Layer**
+    * **Domain Layer**
+      *  **Aggregator**: Group of domain objects (entities and VOs) that can be treated as a single unit.
+      *  **Entities**: Unique identity Mutable .
+      *  **Domain Services**: Encapsulate application behaviors not belonging to any entity. Input and output of domain objects.
+      *  **Value Objects**: Objects of our application.
+
+**DDD Layers:**  
+
+<p align="center">
+ <img style="text-align:center" src="images/ddd.PNG" width="25%" height="25%" alt="DDD">
+</p>
+
 
 # 4. Configuration ⚙️
 
