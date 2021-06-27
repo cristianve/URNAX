@@ -20,8 +20,9 @@ import scala.io.StdIn
 
 /**
  * Utilizamos el tipo object para asegurar nuestro Singleton de cliente API ademas extendemos del treat Directives de la librería akka
- *
- *
+ * Punto de entrada a nuestra aplicacion encargada de instanciar los casos de usos necesarios para su ejecucion
+ * Consumible mediante cualquier cliente http
+ * API
  */
 object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
 
