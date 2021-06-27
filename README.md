@@ -87,12 +87,15 @@ Now application is running on http://localhost:9001
 
 # 6. End-points:
 
-# POST Vote:
+## POST Vote:
 
  <img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
  <img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
  <img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
 
 
+## Get score:
+
+ <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
 
