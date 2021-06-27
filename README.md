@@ -116,8 +116,12 @@ Route ('http://localhost:9001/score')
 
 <b>Return all political parties scores (vote counts):<b/>✔️  
     
+## Send emails:
+Route ('http://localhost:9001/notify')  
 
-<img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
+<b>Send emails to all person on people.json with the needed information to know where to go to vote:<b/>✔️  
+
+<img style="text-align:center" src="images/EmailService.JPG" width="50%" height="50%" alt="postmanScore">
 
 ## Email Service:
 
