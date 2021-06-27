@@ -13,9 +13,13 @@
 *
     4. Configuration
 *
-    5. How to build
+
 *
-    6. Run in local
+    5. Run in local
+    
+
+*
+    6. Endpoints
 
 # 1. Main idea 🤔💭
 
@@ -95,7 +99,7 @@ In order to have a list of voters and parties we use the JSON data structure as 
 
 Now application is running on http://localhost:9001
 
-# 6. End-points:
+# 6. Endpoints:
 
 ## POST Vote:
 Route ('http://localhost:9001/vote')
