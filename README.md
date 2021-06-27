@@ -4,20 +4,12 @@
 
 # Content 📇
 
-*
-    1. Main Idea
-*
-    2. Requirements
-*
-    3. Folders and files
-*
-    4. Configuration
-*
-
-*  5. Run in local
-    
-
-* 6. Endpoints
+*   1. Main Idea
+*   2. Requirements
+*   3. Folders and files
+*   4. Configuration
+*   5. Run in local
+*   6. Endpoints
 
 # 1. Main idea 🤔💭
 
