@@ -75,7 +75,7 @@ Inside sbt write the command "run":
 ```sbt:Votox> run ```
 
 <p align="center">
- <img style="text-align:center" src="images/sbtRun.JPG" width="25%" height="25%" alt="DDD">
+ <img style="text-align:center" src="images/sbtRun.JPG" width="100%" height="100%" alt="DDD">
 </p>
 
 
