@@ -14,12 +14,10 @@
     4. Configuration
 *
 
-*
-    5. Run in local
+*  5. Run in local
     
 
-*
-    6. Endpoints
+* 6. Endpoints
 
 # 1. Main idea 🤔💭
 
