@@ -69,13 +69,17 @@ The requirements for this application are:
 
 # 5. Run in local 🏠
 
-## Go to root path URNAX where you can find the build.sbt file and run the following command on CMD:
-```sbt```
-Inside sbt write the command "run":
-```sbt:Votox> run ```
+* Go to root path URNAX where you can find the build.sbt file and run the following command on CMD:
+```sbt```  
+
+
+* Inside sbt write the command "run":
+```sbt:Votox> run ``` 
+
+
 
 <p align="center">
- <img style="text-align:center" src="images/sbtRun.JPG" width="25%" height="25%" alt="DDD">
+ <img style="text-align:center" src="images/sbtRun.JPG" width="100%" height="100%" alt="DDD">
 </p>
 
 
