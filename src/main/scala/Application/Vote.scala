@@ -2,15 +2,16 @@ package com.redgroup.votox
 package Application
 
 import Domain.Person
-import Domain.Services.ValidationService
+import Domain.Services.{ValidationService, VoteService}
 
-class Vote (val validationService: ValidationService) {
+class Vote (val validationService: ValidationService, val voteService: VoteService) {
 
 
-  def Execute( person:Person) : Boolean ={
+  def Execute( person:Person) : Unit ={
 
-    var validate = validationService.
+    validationService.validate(person)
 
+    voteService.Vote(person)
   }
 
 }

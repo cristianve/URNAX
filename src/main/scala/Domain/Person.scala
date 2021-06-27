@@ -1,6 +1,10 @@
 package com.redgroup.votox
 package Domain
 
-class Person(val name :String, val surname: String, val nif : String) {
+case class Person(id: Int, name :String,  surname: String,  nif : String,  direction: Direction, var hasVoted: Boolean) {
+
+  def MarkAsVoted(voted: Boolean): Unit ={
+    hasVoted = voted;
+  }
 
 }
