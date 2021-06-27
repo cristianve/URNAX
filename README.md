@@ -57,6 +57,14 @@ The requirements for this application are:
  <img style="text-align:center" src="images/ddd.PNG" width="25%" height="25%" alt="DDD">
 </p>
 
+** Database/Local Store via JSON: **
+In order to have a list of voters and parties we use the JSON data structure as a database.
+<p align="center">
+ <img style="text-align:center" src="images/peopleJson.JPG" width="25%" height="25%" alt="peopleJson">
+</p>
+<p align="center">
+ <img style="text-align:center" src="images/politicalParties.JPG" width="25%" height="25%" alt="politicalParties">
+</p>
 
 # 4. Configuration ⚙️
 
@@ -87,5 +95,27 @@ Now application is running on http://localhost:9001
 
 # 6. End-points:
 
+## POST Vote:
+Route ('http://localhost:9001/vote')
+* idPerson: Person identifier. (Required)
+* idPoliticalParty: Political party identifier. (Required)  
+
+Case vote successful:✔️  
+
+<img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
+Case idPerson already voted (hasVoted = true):❌  
+
+<img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
+Case idPerson not exist on the person.json list:❌  
+
+<img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
+
+
+## Get score:
+Route ('http://localhost:9001/score')  
+
+Return all political parties scores (vote counts):✔️  
+
+<img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
 
