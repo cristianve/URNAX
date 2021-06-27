@@ -57,6 +57,14 @@ The requirements for this application are:
  <img style="text-align:center" src="images/ddd.PNG" width="25%" height="25%" alt="DDD">
 </p>
 
+** Database/Local Store via JSON: **
+In order to have a list of voters and parties we use the JSON data structure as a database.
+<p align="center">
+ <img style="text-align:center" src="images/peopleJson.JPG" width="25%" height="25%" alt="peopleJson">
+</p>
+<p align="center">
+ <img style="text-align:center" src="images/politicalParties.JPG" width="25%" height="25%" alt="politicalParties">
+</p>
 
 # 4. Configuration ⚙️
 
