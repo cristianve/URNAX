@@ -1,19 +1,23 @@
 package com.redgroup.votox
 package Domain.Services
 
-import Domain.Services.Repositories.PersonRepository
+import Domain.Services.Repositories.{PersonRepository, PoliticalPartyRepository}
 
 import com.redgroup.votox.Domain.Person
 
-class VoteService (personRepository: PersonRepository){
+class VoteService (personRepository: PersonRepository, politicalPartyRepository: PoliticalPartyRepository){
 
   def Vote(idPerson:Int, idPoliticalParty: Int): Unit ={
 
     val repoPerson = personRepository.Get(idPerson)
 
+    val repoPoliticalParty = politicalPartyRepository.Get(idPoliticalParty)
+
     repoPerson.MarkAsVoted(true)
 
-    personRepository.Update(repoPerson)
+    repoPoliticalParty.UpdateVotes()
 
+    personRepository.Update(repoPerson)
+    politicalPartyRepository.Update(repoPoliticalParty)
   }
 }

@@ -10,7 +10,7 @@ import com.redgroup.votox.Application.Dto.VoteDto
 import com.redgroup.votox.Application.VoteApplicationService
 import com.redgroup.votox.Domain.Exceptions.{UserAlreadyVotedException, UserNotExistException}
 import com.redgroup.votox.Domain.Services.{ValidationService, VoteService}
-import com.redgroup.votox.Infrastructure.Repository.PersonJsonRepository
+import com.redgroup.votox.Infrastructure.Repository.{PersonJsonRepository, PoliticalPartyJsonRepository}
 
 import scala.concurrent.ExecutionContextExecutor
 import scala.io.StdIn
@@ -30,7 +30,7 @@ object HttpServerVotox {
             (idPerson, idPoliticalParty) =>
 
               val vote = VoteDto(idPerson.toInt, idPoliticalParty.toInt)
-              val applicationService = new VoteApplicationService(validationService = new ValidationService(new PersonJsonRepository), voteService = new VoteService(new PersonJsonRepository))
+              val applicationService = new VoteApplicationService(validationService = new ValidationService(new PersonJsonRepository), voteService = new VoteService(new PersonJsonRepository, new PoliticalPartyJsonRepository))
 
 
               try {
