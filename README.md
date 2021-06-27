@@ -108,11 +108,11 @@ Route ('http://localhost:9001/vote')
 <img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
     </br>
 <b>Case idPerson already voted (hasVoted = true):<b/>❌  
-
+</br>
 <img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
     </br>
 <b>Case idPerson not exist on the person.json list:<b/>❌  
-    
+   </br> 
 
 <img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
 
