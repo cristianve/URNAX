@@ -102,13 +102,13 @@ Route ('http://localhost:9001/vote')
 * idPerson: Person identifier. (Required)
 * idPoliticalParty: Political party identifier. (Required)  
 
-**Case vote successful:**✔️  
+<b>Case vote successful:<b/>✔️  
 
 <img style="text-align:center" src="images/postmanVoteSucces.JPG" width="50%" height="50%" alt="postmanVoteSucces">
-**Case idPerson already voted (hasVoted = true):**❌  
+<b>Case idPerson already voted (hasVoted = true):<b/>❌  
 
 <img style="text-align:center" src="images/postmanVoteAlready.JPG" width="50%" height="50%" alt="postmanVoteAlready">
-**Case idPerson not exist on the person.json list:**❌  
+<b>Case idPerson not exist on the person.json list:<b/>❌  
 
 <img style="text-align:center" src="images/postmanVoteIdNotExist.JPG" width="50%" height="50%" alt="postmanVoteIdNotExist">
 
