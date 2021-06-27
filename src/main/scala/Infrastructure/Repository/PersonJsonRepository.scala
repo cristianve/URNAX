@@ -15,7 +15,7 @@ import scala.io.BufferedSource
 
 class PersonJsonRepository extends PersonRepository {
 
-  val path: String = getClass.getResource("people.json").getPath;
+  val path: String = getClass.getResource("/people.json").getPath;
 
   override def Get(id: Int): Person = {
 
@@ -47,9 +47,9 @@ class PersonJsonRepository extends PersonRepository {
 
         val json = persons.asJson
 
-        val writer = new PrintWriter(path) {
+        new PrintWriter(path) {
           print("")
-          write(json.toString())
+          print(json.toString())
           close()
         }
 

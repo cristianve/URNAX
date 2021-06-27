@@ -15,7 +15,7 @@ import scala.io.BufferedSource
 
 class PoliticalPartyJsonRepository extends PoliticalPartyRepository {
 
-  val path: String = getClass.getResource("politicalParties.json").getPath;
+  val path: String = getClass.getResource("/politicalParties.json").getPath;
 
   override def Get(id: Int): PoliticalParty = {
 
@@ -47,9 +47,9 @@ class PoliticalPartyJsonRepository extends PoliticalPartyRepository {
 
         val json = politicalParties.asJson
 
-        val writer = new PrintWriter(path) {
+        new PrintWriter(path) {
           print("")
-          write(json.toString())
+          print(json.toString())
           close()
         }
 
