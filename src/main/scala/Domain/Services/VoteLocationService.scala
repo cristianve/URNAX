@@ -2,7 +2,7 @@ package com.redgroup.votox
 package Domain.Services
 
 import Domain.Exceptions.NoSchoolForLocationFoundException
-import Domain.Services.Repositories.LocationRepository
+import Domain.Repositories.LocationRepository
 import Domain.{Person, School}
 
 class VoteLocationService(locationRepository: LocationRepository) {

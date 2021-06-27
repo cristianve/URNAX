@@ -2,7 +2,7 @@ package com.redgroup.votox
 package Infrastructure.Repository
 
 import Domain.Person
-import Domain.Services.Repositories.PersonRepository
+import Domain.Repositories.PersonRepository
 
 import io.circe._
 import io.circe.generic.auto._
@@ -59,4 +59,15 @@ class PersonJsonRepository extends PersonRepository {
 
   }
 
+  override def GetAll(): List[Person] = {
+
+    val source: BufferedSource = scala.io.Source.fromFile(path)
+
+    val lines = try source.mkString finally source.close()
+
+    parser.decode[List[Person]](lines) match {
+      case Right(persons) => persons
+      case Left(ex) => null
+    }
+  }
 }

@@ -4,6 +4,7 @@
     "name": "carlos",
     "surname": "Martinez",
     "nif": "48142332G",
+    "email": "carlos@gmail.com",
     "direction": {
       "city": "Esplugues de Llobregat",
       "state": "Barcelona",
@@ -16,6 +17,7 @@
     "name": "Cristian",
     "surname": "Vega",
     "nif": "23442332J",
+    "email": "cristian@gmail.com",
     "direction": {
       "city": "Mollet del Valles",
       "state": "Barcelona",
@@ -28,6 +30,7 @@
     "name": "Jordina",
     "surname": "Pidelaserra",
     "nif": "09876523H",
+    "email": "jordina@gmail.com",
     "direction": {
       "city": "Castellbisbal",
       "state": "Barcelona",
@@ -40,6 +43,7 @@
     "name": "Juan",
     "surname": "Pedro",
     "nif": "48121332G",
+    "email": "juan@gmail.com",
     "direction": {
       "city": "Cornella de Llobregat",
       "state": "Barcelona",
@@ -52,6 +56,7 @@
     "name": "Julio",
     "surname": "Iglesias",
     "nif": "48142312X",
+    "email": "julio@gmail.com",
     "direction": {
       "city": "Badalona",
       "state": "Barcelona",
@@ -64,6 +69,7 @@
     "name": "Whiski",
     "surname": "Alejandro",
     "nif": "65142332G",
+    "email": "whiski@gmail.com",
     "direction": {
       "city": "Barcelona",
       "state": "Barcelona",
@@ -76,6 +82,7 @@
     "name": "Ana",
     "surname": "Rojas",
     "nif": "11142332G",
+    "email": "ana@gmail.com",
     "direction": {
       "city": "Esplugues de Llobregat",
       "state": "Barcelona",
@@ -88,6 +95,7 @@
     "name": "Pepito",
     "surname": "Grillo",
     "nif": "67222332G",
+    "email": "pepito@gmail.com",
     "direction": {
       "city": "Ripollet",
       "state": "Barcelona",
@@ -100,6 +108,7 @@
     "name": "Pepita",
     "surname": "Martinez",
     "nif": "33342332G",
+    "email": "pepita@gmail.com",
     "direction": {
       "city": "Esplugues de Llobregat",
       "state": "Barcelona",
@@ -112,6 +121,7 @@
     "name": "Josefa",
     "surname": "Galvez",
     "nif": "48142344H",
+    "email": "josefa@gmail.com",
     "direction": {
       "city": "Barcelona",
       "state": "Barcelona",

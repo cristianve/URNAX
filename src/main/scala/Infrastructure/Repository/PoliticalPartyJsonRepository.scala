@@ -2,7 +2,7 @@ package com.redgroup.votox
 package Infrastructure.Repository
 
 import Domain.PoliticalParty
-import Domain.Services.Repositories.PoliticalPartyRepository
+import Domain.Repositories.PoliticalPartyRepository
 
 import io.circe._
 import io.circe.generic.auto._

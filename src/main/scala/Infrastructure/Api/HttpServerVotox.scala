@@ -2,11 +2,12 @@ package com.redgroup.votox
 package Infrastructure.Api
 
 import Application.Dto.VoteDto
-import Application.{PoliticalPartyApplicationService, VoteApplicationService}
+import Application.{NotifyPeopleApplicationService, PoliticalPartyApplicationService, VoteApplicationService}
 import Domain.Exceptions.{UserAlreadyVotedException, UserNotExistException}
 import Domain.Services.{ValidationService, VoteService}
 import Infrastructure.Api.Traits.PoliticalPartiesJsonFormatter
-import Infrastructure.Repository.{PersonJsonRepository, PoliticalPartyJsonRepository}
+import Infrastructure.ExternalServices.EmailNotificationService
+import Infrastructure.Repository.{PersonJsonRepository, PoliticalPartyJsonRepository, SchoolJsonRepository}
 
 import akka.actor.typed.ActorSystem
 import akka.actor.typed.scaladsl.Behaviors
@@ -52,18 +53,22 @@ object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
       path("score") {
         get {
           val applicationService = new PoliticalPartyApplicationService(new PoliticalPartyJsonRepository)
-          try {
-            complete(StatusCodes.OK, applicationService.Execute())
-          }
-          catch {
-            case e: UserAlreadyVotedException => complete(StatusCodes.Forbidden, e.getMessage)
-            case e: UserNotExistException => complete(StatusCodes.NotFound, e.getMessage)
-          }
+          complete(StatusCodes.OK, applicationService.Execute())
         }
-
       }
 
-    val routes = voteRoute ~ scoreRoute
+
+    val notifyRoute =
+      path("notify") {
+        post {
+          val applicationService = new NotifyPeopleApplicationService(new PersonJsonRepository, new SchoolJsonRepository, new EmailNotificationService)
+          applicationService.Execute()
+          complete(StatusCodes.OK)
+        }
+      }
+
+
+    val routes = voteRoute ~ scoreRoute ~ notifyRoute
 
     val port = 9001
     val bindingFuture = Http().newServerAt("localhost", port).bindFlow(routes)

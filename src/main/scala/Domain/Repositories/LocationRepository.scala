@@ -1,5 +1,5 @@
 package com.redgroup.votox
-package Domain.Services.Repositories
+package Domain.Repositories
 
 import Domain.School
 

@@ -1,7 +1,7 @@
 package com.redgroup.votox
 package Domain.Services
 
-import Domain.Services.Repositories.{PersonRepository, PoliticalPartyRepository}
+import Domain.Repositories.{PersonRepository, PoliticalPartyRepository}
 
 class VoteService(personRepository: PersonRepository, politicalPartyRepository: PoliticalPartyRepository) {
 

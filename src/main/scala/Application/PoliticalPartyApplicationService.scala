@@ -2,7 +2,7 @@ package com.redgroup.votox
 package Application
 
 import Domain.PoliticalParty
-import Domain.Services.Repositories.PoliticalPartyRepository
+import Domain.Repositories.PoliticalPartyRepository
 
 class PoliticalPartyApplicationService(politicalPartyRepository: PoliticalPartyRepository) {
 

@@ -2,7 +2,7 @@ package com.redgroup.votox
 package Domain.Services
 
 import Domain.Exceptions.{UserAlreadyVotedException, UserNotExistException}
-import Domain.Services.Repositories.PersonRepository
+import Domain.Repositories.PersonRepository
 
 class ValidationService(personRepository: PersonRepository) {
 

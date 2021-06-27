@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "name": "Colegio 0",
+    "direction": {
+      "city": "Esplugues de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08950"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Colegio 1",
+    "direction": {
+      "city": "Mollet del Valles",
+      "state": "Barcelona",
+      "postalCode": "08100"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Colegio 2",
+    "direction": {
+      "city": "Castellbisbal",
+      "state": "Barcelona",
+      "postalCode": "08970"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Colegio 3",
+    "direction": {
+      "city": "Cornella de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08910"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Colegio 4",
+    "direction": {
+      "city": "Badalona",
+      "state": "Barcelona",
+      "postalCode": "08434"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Colegio 5",
+    "direction": {
+      "city": "Barcelona",
+      "state": "Barcelona",
+      "postalCode": "08980"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Colegio 6",
+    "direction": {
+      "city": "Ripollet",
+      "state": "Barcelona",
+      "postalCode": "08990"
+    }
+  }
+]

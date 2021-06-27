@@ -5,19 +5,17 @@ import Domain.Direction
 
 import io.circe.{Decoder, HCursor, Json}
 
-object Person {
+object School {
   // here we are actually casting the return value to Decode
-  implicit val decoder: Decoder[Domain.Person] = (hCursor: HCursor) =>
+  implicit val decoder: Decoder[Domain.School] = (hCursor: HCursor) =>
     for {
       id <- hCursor.downField("id").as[Int]
       name <- hCursor.get[String]("name")
-      surname <- hCursor.get[String]("surname")
-      nif <- hCursor.get[String]("nif")
-      email <- hCursor.get[String]("email")
+
       direction <- hCursor.downField("direction").as[Json]
       city <- direction.hcursor.get[String]("city")
       state <- direction.hcursor.get[String]("state")
       postalCode <- direction.hcursor.get[String]("postalCode")
-      hasVoted <- hCursor.downField("hasVoted").as[Boolean]
-    } yield Domain.Person(id, name, surname, nif, email, Direction(city, state, postalCode), hasVoted)
+
+    } yield Domain.School(id, Direction(city, state, postalCode), name)
 }
