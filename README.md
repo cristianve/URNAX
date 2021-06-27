@@ -119,4 +119,10 @@ Route ('http://localhost:9001/score')
 
 <img style="text-align:center" src="images/postmanScore.JPG" width="50%" height="50%" alt="postmanScore">
 
+## Email Service:
+
+<b>Send email with the information needed to vote (school and town).<b/>✔️  
+    
+
+<img style="text-align:center" src="images/EmailService.JPG" width="50%" height="50%" alt="postmanScore">
 
