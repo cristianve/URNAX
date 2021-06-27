@@ -3,4 +3,4 @@ package Domain
 
 import Domain.PoliticalPartyEnum.PoliticalPartyEnum
 
-case class Vote(politicalPartyEnum: PoliticalPartyEnum)
+case class politicalParty(politicalPartyEnum: PoliticalPartyEnum, name: String)

@@ -1,0 +1,38 @@
+[
+  {
+    "id":1,
+    "name": "carlos",
+    "surname": "Martinez",
+    "nif": "48142332G",
+    "direction": {
+      "city": "Esplugues de Llobregat",
+      "state": "Barcelona",
+      "postalCode": "08950"
+    },
+    "hasVoted": false
+  },
+  {
+    "id":2,
+    "name": "Cristian",
+    "surname": "Vega",
+    "nif": "23442332J",
+    "direction": {
+      "city": "Mollet del Valles",
+      "state": "Barcelona",
+      "postalCode": "08100"
+    },
+    "hasVoted": false
+  },
+  {
+    "id":3,
+    "name": "Jordina",
+    "surname": "Pidelaserra",
+    "nif": "09876523H",
+    "direction": {
+      "city": "Castellbisbal",
+      "state": "Barcelona",
+      "postalCode": "08970"
+    },
+    "hasVoted": true
+  }
+]

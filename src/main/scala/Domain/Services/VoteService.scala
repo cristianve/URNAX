@@ -7,11 +7,11 @@ import com.redgroup.votox.Domain.Person
 
 class VoteService (personRepository: PersonRepository){
 
-  def Vote(person:Person): Unit ={
+  def Vote(idPerson:Int, idPoliticalParty: Int): Unit ={
 
-    val repoPerson = personRepository.Get(person.id)
+    val repoPerson = personRepository.Get(idPerson)
 
-    repoPerson.hasVoted = true
+    repoPerson.MarkAsVoted(true)
 
     personRepository.Update(repoPerson)
 

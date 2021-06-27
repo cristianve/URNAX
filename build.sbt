@@ -11,3 +11,11 @@ libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.6.15"
 libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % "2.6.15"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.6.15"
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.9.2"
+
+val circeVersion = "0.14.1"
+
+libraryDependencies ++= Seq(
+  "io.circe" %% "circe-core",
+  "io.circe" %% "circe-generic",
+  "io.circe" %% "circe-parser"
+).map(_ % circeVersion)
