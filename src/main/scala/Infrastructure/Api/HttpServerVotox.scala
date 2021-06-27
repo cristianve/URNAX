@@ -61,7 +61,7 @@ object HttpServerVotox extends Directives with PoliticalPartiesJsonFormatter {
     val notifyRoute =
       path("notify") {
         post {
-          val applicationService = new NotifyPeopleApplicationService(new PersonJsonRepository, new SchoolJsonRepository, new EmailNotificationService)
+          val applicationService = new NotifyPeopleApplicationService(personRepository = new PersonJsonRepository,locationRepository =  new SchoolJsonRepository, notificationService =  new EmailNotificationService)
           applicationService.Execute()
           complete(StatusCodes.OK)
         }
