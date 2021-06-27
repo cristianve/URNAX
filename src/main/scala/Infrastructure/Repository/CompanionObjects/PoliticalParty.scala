@@ -1,8 +1,6 @@
 package com.redgroup.votox
 package Infrastructure.Repository.CompanionObjects
 
-import Domain.PoliticalPartyEnum
-
 import io.circe.{Decoder, HCursor}
 
 object PoliticalParty {

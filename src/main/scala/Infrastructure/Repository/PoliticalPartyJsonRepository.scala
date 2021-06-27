@@ -24,7 +24,9 @@ class PoliticalPartyJsonRepository extends PoliticalPartyRepository {
     val lines = try source.mkString finally source.close()
 
     parser.decode[List[Domain.PoliticalParty]](lines) match {
-      case Right(politicalParties) => politicalParties.find(p => {p.id == id}).orNull
+      case Right(politicalParties) => politicalParties.find(p => {
+        p.id == id
+      }).orNull
       case Left(ex) => null
     }
   }
@@ -37,13 +39,15 @@ class PoliticalPartyJsonRepository extends PoliticalPartyRepository {
     parser.decode[ListBuffer[PoliticalParty]](lines) match {
       case Right(politicalParties) =>
 
-        politicalParties -= politicalParties.find(p => {p.id == politicalParty.id}).orNull
+        politicalParties -= politicalParties.find(p => {
+          p.id == politicalParty.id
+        }).orNull
 
         politicalParties += politicalParty
 
-       val json = politicalParties.asJson
+        val json = politicalParties.asJson
 
-        val writer = new PrintWriter(path){
+        val writer = new PrintWriter(path) {
           print("")
           write(json.toString())
           close()
@@ -55,4 +59,15 @@ class PoliticalPartyJsonRepository extends PoliticalPartyRepository {
 
   }
 
+  override def GetAll(): List[PoliticalParty] = {
+
+    val source: BufferedSource = scala.io.Source.fromFile(path)
+
+    val lines = try source.mkString finally source.close()
+
+    parser.decode[List[Domain.PoliticalParty]](lines) match {
+      case Right(politicalParties) => politicalParties
+      case Left(ex) => null
+    }
+  }
 }

@@ -1,9 +1,9 @@
 package com.redgroup.votox
 package Domain
 
-case class Person(id: Int, name :String,  surname: String,  nif : String,  direction: Direction, var hasVoted: Boolean) {
+case class Person(id: Int, name: String, surname: String, nif: String, direction: Direction, var hasVoted: Boolean) {
 
-  def MarkAsVoted(voted: Boolean): Unit ={
+  def MarkAsVoted(voted: Boolean): Unit = {
     hasVoted = voted;
   }
 

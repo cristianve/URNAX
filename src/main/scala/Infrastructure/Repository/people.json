@@ -1,6 +1,6 @@
 [
   {
-    "id":1,
+    "id": 1,
     "name": "carlos",
     "surname": "Martinez",
     "nif": "48142332G",
@@ -12,7 +12,7 @@
     "hasVoted": false
   },
   {
-    "id":2,
+    "id": 2,
     "name": "Cristian",
     "surname": "Vega",
     "nif": "23442332J",
@@ -24,7 +24,7 @@
     "hasVoted": false
   },
   {
-    "id":3,
+    "id": 3,
     "name": "Jordina",
     "surname": "Pidelaserra",
     "nif": "09876523H",
